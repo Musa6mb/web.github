@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxury Hotel</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="menu-container">
+    <span class="menu-icon" onclick="toggleMenu()">☰</span>
+    <div id="menu-options">
+      <a href="INDEX.html">Home</a>
+      <a href="Rooms.html">Rooms</a>
+      <a href="#booking">Book</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <section id="home">
+    <h2 style="color: #808000; font-size: 2.5em; text-align: center;">WELCOME TO MUSA'S LUXURY HOTEL</h2>
+    <p style="color: #808000; border: 2px solid #808000; border-radius: 10px; padding: 10px;">
+      Experience the best stay with top-notch services and amazing views.
+    </p>
+  </section>
+
+  <section id="rooms" style="background-color: #808000; padding: 20px; border-radius: 10px; color: white;">
+    <h2 style="text-align: center;">Our Rooms</h2>
+    <div class="room" style="background-color: white; color: #333; padding: 15px; border-radius: 8px;">
+      <h3 style="color: #808000;">Deluxe Suite</h3>
+      <p>Spacious room with nice balcony.</p>
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu-options");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
+
+</body>
+</html>
